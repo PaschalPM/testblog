@@ -1,0 +1,8 @@
+main{
+    min-height: calc(100vh - 75px);
+    /* display: flex; */
+}
+main #pageInView{
+    padding: 10px 10px;
+    color: var(--text-color);
+}

@@ -1,0 +1,115 @@
+:root{
+    --pri-color:rgb(249, 243, 243);
+    --sec-color:rgb(69, 4, 4);
+    --ter-color:rgb(110, 4, 110);
+    --lst-color:rgb(234, 171, 234);
+    --text-color: #444;
+    --card-color:rgb(254, 252, 252);
+}
+@media screen and (prefers-color-scheme:dark){
+    :root{
+        --pri-color:rgb(34, 24, 24);
+        --sec-color:rgb(148, 95, 103);
+        --ter-color:rgb(230, 153, 230);
+        --lst-color:rgb(234, 171, 234);
+        /* --text-color: #444; */
+        --text-color: rgb(213, 204, 213);
+        --card-color:rgb(49, 32, 32);
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    -webkit-font-smoothing:antialiased;
+}
+.isActive{
+    border-bottom: 2px solid var(--ter-color);
+    padding-bottom: 2px;
+    transform: scale(1.05,1.05);
+}
+
+.card{
+    background-color: var(--card-color);
+    box-shadow: 2px 2px 2px grey;
+    border: none;
+    padding: 10px;
+    min-height: 100px;
+    position: relative;
+}
+.spinner{
+    color: var(--ter-color);
+    font-size: 1.5em;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.container{
+    display: block;
+    margin: auto;
+}
+@media screen and (max-width:576px){
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (min-width:576px){
+    .container{
+        width: 540px;
+    }
+}
+@media screen and (min-width:768px){
+    .container{
+        width: 720px;
+    }
+}
+.grid-12{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.col{
+    color: currentColor;
+    margin:5px;
+    position: relative;
+}
+@media screen and (max-width:576px){
+    .col{
+        grid-column: span 12;
+    }
+}
+@media screen and (min-width:576px){
+    .col{
+        grid-column: span 12;
+    }
+}
+@media screen and (min-width:768px){
+    .col{
+        grid-column: span 6;
+    }
+}
+
+.col-li{
+    color: currentColor;
+    margin:5px;
+    position: relative;
+}
+@media screen and (max-width:576px){
+    .col-li{
+        grid-column: span 4;
+    }
+}
+@media screen and (min-width:576px){
+    .col-li{
+        grid-column: span 3;
+    }
+}
+@media screen and (min-width:768px){
+    .col-li{
+        grid-column: span 2;
+    }
+}

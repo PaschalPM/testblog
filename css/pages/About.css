@@ -1,0 +1,39 @@
+#aboutpage .img_thumbnail{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    float: right;
+    margin-left: 15px;
+}
+
+#aboutpage .about-dev{
+    margin:15px 0px;
+    padding: 0px 10px;
+}
+
+#aboutpage .about-dev p{
+    font-size:.9em;
+    line-height: 20px;
+    text-align: justify;
+    margin-top: 10px;
+}
+#aboutpage .about-dev ul li{
+    font-size:.8em;
+    font-weight: 700;
+}
+#aboutpage .about-dev ul{
+    margin-top: 10px;
+}
+#aboutpage .about-dev ul li a{
+    all:revert;
+    font-size: inherit;
+    color: inherit;
+}
+
+@media screen and (orientation:portrait) {
+    #aboutpage .about-dev p{
+        line-height: 1.75em;
+        text-align: left;
+    }
+}

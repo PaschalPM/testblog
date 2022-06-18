@@ -1,0 +1,15 @@
+footer .container div{
+    height: 25px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    font-size: .85em;
+    font-weight: 700;
+    font-style: italic;
+    color:var(--ter-color);
+    /* font-family:cursive; */
+}
+footer{
+    background-color: var(--pri-color);
+}
